@@ -247,4 +247,53 @@ body{
     color: #00483d;
 }
 
+/* ===================== footer ====================== */
+
+.footer{
+    width: 100%;
+    background: linear-gradient(#00917a,#00483d);
+    color: white;
+    border-radius: 10px 10px 0 0;
+}
+
+.footer_policy{
+    width: 100%;    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.footer_policy div{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 25%;
+    border-right: 2px solid white;
+    cursor: pointer;
+    
+
+}
+
+.footer_policy div i{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.footer_container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer_container span{
+    margin-bottom: 5px;
+}
+
+.footer_container span b{
+    font-size: 17px;
+}
+
 
