@@ -7,6 +7,7 @@
 
 body{
     background: #f4f4f4;
+    padding: 0 100px;
 }
 /* heading */
 .heading{
@@ -62,6 +63,7 @@ body{
 /*======= container ==============*/
 .container{
     background: linear-gradient(#00917a,#00483d);
+    border-radius: 5px;
 }
 
 .menu{
@@ -70,12 +72,12 @@ body{
     justify-content: space-around;
     color: white;
     margin-top: 10px;
-    border-radius: 5px;
     cursor: pointer;
-    margin-left: 160px;
+    margin: 0 auto;
 }
 
 .menu li{
+    
     padding: 10px 0;
     list-style: none;
     display: flex;
@@ -89,5 +91,54 @@ body{
 }
 
 .menu li:hover{
-    border-bottom: 5px solid orange;
+    border-bottom: 4px solid orange;
 }
+
+/*=============== slider ==================*/
+.slider{
+    height: 350px;
+    border-radius: 10px;
+    margin-top: 15px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    align-items: center;
+}
+
+
+.slider img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.control{
+    position: absolute;
+    font-size: 25px;
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(0,0,0,0.2);
+    color: white;
+    cursor: pointer;
+}
+
+.control.prev{
+    left: 30px;
+}
+
+.control.next{
+    right: 30px;
+}
+
+.control.prev:hover, .control.next:hover{
+    background: rgba(0,0,0,0.1);
+}
+
+/* ============= product ==================== */
+
+
+
