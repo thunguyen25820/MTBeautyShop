@@ -9,11 +9,12 @@ body{
     background: #f4f4f4;
     padding: 0 100px;
 }
-/* heading */
+
 .heading{
     padding: 20px 40px;
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
 
 .logo{
@@ -64,21 +65,30 @@ body{
 .container{
     background: linear-gradient(#00917a,#00483d);
     border-radius: 5px;
+
 }
 
+.category{
+    padding: 15px;
+}
 .menu{
-    width: 80%;
+    width: 85%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
     color: white;
     margin-top: 10px;
     cursor: pointer;
     margin: 0 auto;
 }
 
+.menu i{
+    font-size: 30px;
+}
+
 .menu li{
     
-    padding: 10px 0;
+    padding: 5px 0;
     list-style: none;
     display: flex;
     flex-direction: column;
@@ -93,16 +103,273 @@ body{
 .menu li:hover{
     border-bottom: 4px solid orange;
 }
+/* ============== icon category============== */
+.dropdown_category{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 1;
+    visibility: hidden;
+    padding: 5px;
+    margin-top: 10px;
+    margin-left: -5px;
+}
 
+.info{
+    background: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.info div{
+    display: flex;
+    flex-direction: column;
+}
+
+.info div a{
+    padding: 5px 15px;
+    text-decoration: none;
+    color: black;
+}
+.info span{
+    color: gray;
+    font-size: 16px;
+}
+
+.category:hover .dropdown_category{
+    visibility: visible;
+}
+
+.dropdown_category a:hover{
+    background: rgba(0,0,0,0.2);
+}
+/*=============== dropdown makup ==========*/
+.dropdown_makup{
+    background: white;
+    color: black;
+    padding: 20px 5px;
+    border-radius: 0 0 10px 10px;
+    display: flex;
+    flex-direction:row;
+    position: absolute;
+    z-index: 1;
+    margin-top: 60px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    visibility: hidden;
+}
+
+.dropdown_makup span{
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline 3px rgb(58, 219, 125);
+    padding: 0 70px 0 10px;
+}
+
+.dropdown_makup a{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: black;
+}
+
+.eye_content , .lip_content, .face_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    
+}
+
+.makup_image{
+    margin: 50px 30px 30px -30px;
+}
+.makup_image img{
+    height: 250px;
+    width: 250px;
+}
+
+#makup:hover .dropdown_makup{
+    visibility: visible;
+}
+
+.dropdown_makup a:hover{
+    background: rgba(0,0,0,0.3) ;
+}
+
+.dropdown_makup span:hover{
+    color: rgb(58, 219, 125);
+}
+/* =================skincare-chamsocda========= */
+.dropdown_skincare{
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+    margin-top: 57px;
+    padding: 20px 5px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    visibility: hidden;
+}
+
+.dropdown_skincare span{
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline 3px rgb(58, 219, 125);
+    padding: 0 70px 0 10px;
+}
+
+.dropdown_skincare a{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: black;
+}
+.clean_content, .care_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.skin_image{
+    margin: 50px 30px 30px -20px;
+}
+.skin_image img{
+    height: 220px;
+    width: 220px;
+}
+
+#skincare:hover .dropdown_skincare{
+    visibility: visible;
+}
+
+.dropdown_skincare a:hover{
+    background: rgba(0,0,0,0.3) ;
+}
+
+.dropdown_skincare span:hover{
+    color: rgb(58, 219, 125);
+}
+
+/* =================hair-chamsoctoc========= */
+.dropdown_hair{
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+    margin-top: 57px;
+    padding: 20px 5px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    visibility: hidden;
+}
+
+.dropdown_hair span{
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline 3px rgb(58, 219, 125);
+    padding: 0 70px 0 10px;
+}
+
+.dropdown_hair a{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: black;
+}
+.cleanhair_content, .skinhair_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.hair_image{
+    margin: 50px 30px 30px -20px;
+}
+.hair_image img{
+    height: 220px;
+    width: 220px;
+}
+
+#hair:hover .dropdown_hair{
+    visibility: visible;
+}
+
+.dropdown_hair a:hover{
+    background: rgba(0,0,0,0.3) ;
+}
+
+.dropdown_hair span:hover{
+    color: rgb(58, 219, 125);
+}
+
+/* =================body-chamsoctoanthan========= */
+.dropdown_body{
+    background: white;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    z-index: 1;
+    margin-top: 57px;
+    margin-left: -130px;
+    padding: 20px 5px;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    visibility: hidden;
+}
+
+.dropdown_body span{
+    color: gray;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline 3px rgb(58, 219, 125);
+    padding: 0 70px 0 10px;
+}
+
+.dropdown_body a{
+    text-decoration: none;
+    padding: 5px 15px;
+    color: black;
+}
+.cleanbody_content, .skinbody_content{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.body_image{
+    margin: 50px 30px 30px -20px;
+}
+.body_image img{
+    height: 220px;
+    width: 220px;
+}
+
+#body:hover .dropdown_body{
+    visibility: visible;
+}
+
+.dropdown_body a:hover{
+    background: rgba(0,0,0,0.3) ;
+}
+
+.dropdown_body span:hover{
+    color: rgb(58, 219, 125);
+}
 /*=============== slider ==================*/
 .slider{
     height: 350px;
     border-radius: 10px;
-    margin-top: 15px;
     overflow: hidden;
     display: flex;
     position: relative;
+    z-index: 0;
     align-items: center;
+    margin-top: 10px;
 }
 
 
@@ -121,7 +388,7 @@ body{
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    background: rgba(0,0,0,0.2);
+    background: rgba(179, 176, 176, 0.2);
     color: white;
     cursor: pointer;
 }

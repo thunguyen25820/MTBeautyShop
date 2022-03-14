@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MTBeauty shop</title>
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script> -->
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="style.css">
@@ -26,21 +29,147 @@
         </div>
         <div class="container">
             <ul class="menu">
-                <li>
+                <div class="category">
+                    <i class="fa-solid fa-align-justify"></i>
+                    <!--  -->
+                    <div class="dropdown_category">
+                        <div class="info">
+                            <span><em>Thông tin</em></span>
+                            <div class="info_content">
+                                <a href="#">Sự kiện khuyến mãi</a>
+                                <a href="#">Bí quyết làm đẹp</a>
+                                <a href="#">Review sản phẩm</a>
+                            </div>
+                            <span><em>Hổ trợ</em></span>
+                            <div class="support_content">
+                                <a href="">Hướng dẫn mua hàng</a>
+                                <a href="">Chính sách đổi trả</a>
+                                <a href="">Giải đáp thắc mắc</a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  -->
+                </div>
+                <li id="makup">
                     <i class='bx bxs-face-mask'></i>
                     <span>Trang điểm</span>
+                    <!--  -->
+                    <div class="dropdown_makup">
+                        <div class="makup_eye">
+                            <span>Trang điểm mắt</span>
+                            <div class="eye_content">
+                                <a href="#">Eyeliner</a>
+                                <a href="#">Mascara</a>
+                                <a href="#">Phấn mắt</a>
+                                <a href="#">Kẻ mày</a>
+                            </div>
+                        </div>
+                        <div class="makup_lip">
+                            <span>Trang điểm môi</span>
+                            <div class="lip_content">
+                                <a href="#">Che khuyết điểm môi</a>
+                                <a href="#">Son môi</a>
+                                <a href="#">Son dưỡng</a>
+                                <a href="#">Mặt nạ môi</a>
+                            </div>
+                        </div>
+                        <div class="makup_face">
+                            <span>Trang điểm mặt</span>
+                            <div class="face_content">
+                                <a href="#">Kem lót</a>
+                                <a href="#">Kem nền</a>
+                                <a href="#">Kem che khuyết điểm</a>
+                                <a href="#">Phấn phủ</a>
+                                <a href="#">Tạo khối</a>
+                            </div>
+                        </div>
+                        <div class="makup_image">
+                            <img src="./image/makup.png" alt="">
+                        </div>
+                    </div>
+                    <!--  -->
                 </li>
-                <li>
+                <li id="skincare">
                     <i class='bx bx-donate-blood'></i>
                     <span>Chăm sóc da</span>
+                    <!--  -->
+                    <div class="dropdown_skincare">
+                        <div class="skin_clean">
+                            <span>Làm sạch da</span>
+                            <div class="clean_content">
+                                <a href="#">Sữa rửa mặt</a>
+                                <a href="#">Tẩy trang</a>
+                                <a href="#">Tẩy tế bào chết</a>
+                            </div>
+                        </div>
+                        <div class="skin_care">
+                            <span>Dưỡng da</span>
+                            <div class="care_content">
+                                <a href="#">Mặt nạ ngủ</a>
+                                <a href="#">Toner</a>
+                                <a href="#">Lotion</a>
+                                <a href="#">Kem dưỡng</a>
+                                <a href="#">Kem chống nắng</a>
+                            </div>
+                        </div>
+                        <div class="skin_image">
+                            <img src="./image/skincare.png" alt="">
+                        </div>
+                    </div>
+                    <!--  -->
                 </li>
-                <li>
+                <li id="hair">
                     <i class='bx bx-spray-can'></i>
                     <span>Chăm sóc tóc</span>
+                    <!--  -->
+                    <div class="dropdown_hair">
+                        <div class="hair_clean">
+                            <span>Làm sạch tóc</span>
+                            <div class="cleanhair_content">
+                                <a href="#">Dầu gội</a>
+                                <a href="#">Dầu gội khô</a>
+                                <a href="#">Dầu xả</a>
+                            </div>
+                        </div>
+                        <div class="hair_skin">
+                            <span>Dưỡng da</span>
+                            <div class="skinhair_content">
+                                <a href="#">Xịt dưỡng tóc</a>
+                                <a href="#">Dầu dưỡng tóc</a>
+                            </div>
+                        </div>
+                        <div class="hair_image">
+                            <img src="./image/hair.png" alt="">
+                        </div>
+                    </div>
+                    <!--  -->
                 </li>
-                <li>
+                <li id="body">
                     <i class='bx bx-bath'></i>
                     <span>Chăm sóc toàn thân</span>
+                    <!--  -->
+                    <div class="dropdown_body">
+                        <div class="body_clean">
+                            <span>Làm sạch</span>
+                            <div class="cleanbody_content">
+                                <a href="#">Sữa tắm</a>
+                                <a href="#">Tẩy tế bào chết</a>
+                                <a href="#">Tẩy lông</a>
+                            </div>
+                        </div>
+                        <div class="body_skin">
+                            <span>Dưỡng da</span>
+                            <div class="skinbody_content">
+                                <a href="#">Sữa dưỡng thể</a>
+                                <a href="#">Dưỡng da tay</a>
+                                <a href="#">Khử mùi</a>
+                            </div>
+                        </div>
+                        <div class="body_image">
+                            <img src="./image/body.png" alt="">
+                        </div>
+                    </div>
+                    <!--  -->
                 </li>
                 <li>
                     <i class='bx bx-trash-alt'></i>
@@ -52,7 +181,11 @@
                 </li>
             </ul>
         </div>
+
     </div>
+
+    
+
     <div class="slider">
         <img src="./image/la_roche_posay.jpeg" alt="">
         <div class="control prev">
